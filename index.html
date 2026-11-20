@@ -1,0 +1,53 @@
+```html
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>La mia V</title>
+
+    <style>
+        body {
+            background-color: black;
+            color: lime;
+            text-align: center;
+        }
+
+        #figura {
+            font-size: 20px;
+            font-family: monospace;
+            white-space: pre;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>La mia V</h1>
+
+    <div id="figura"></div>
+
+    <script>
+        let z = 50;
+        let x = 0;
+
+        const carattere = "*";
+        const spazio = " ";
+
+        while (z > 0) {
+            document.getElementById("figura").innerHTML +=
+                spazio.repeat(x) + carattere.repeat(z) + "<br>";
+
+            z -= 2;
+            x++;
+        }
+
+        document.getElementById("figura").innerHTML +=
+            spazio.repeat(25) + "*<br>";
+
+        document.getElementById("figura").innerHTML +=
+            "_".repeat(50);
+    </script>
+
+</body>
+</html>
+```
